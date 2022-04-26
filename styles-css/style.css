@@ -9,8 +9,12 @@ body{
     background-color: rgb(238, 201, 107);    
 }
 
+header{
+    background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
+}
+
 nav{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -23,13 +27,23 @@ nav a{
     color: black;
     padding: 5px 5px 5px 5px;
     margin: 5px 5px 5px 5px;
-    /* margin-top: 50px; */
+}
+
+nav a:hover{
+    color: rgba(187, 19, 19, 0.897);
 }
 
 .logo-eloy{
-    width: 200px;
     height: 120px;
+    width: 200px;
+    transition: height, width, 2s;
 }
+
+.logo-eloy:hover{
+    height: 200px;
+    width: 280px; 
+}
+
 
 h1{
     color: rgba(187, 19, 19, 0.897);
@@ -71,7 +85,8 @@ h1{
 
 footer{
     bottom: 0;
-    background-color: antiquewhite;
+    background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
+    /* background-color: antiquewhite; */
     color: black;
     font-size: 20px;
 }
@@ -130,6 +145,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 .parte-2{
     grid-area: parte-2;
