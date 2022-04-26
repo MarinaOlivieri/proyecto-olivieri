@@ -1,0 +1,234 @@
+/* *{
+    padding: 0%;
+    margin: 0%;  
+} */
+
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(238, 201, 107);    
+}
+
+nav{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif; 
+    font-size: 30px; 
+    color: black;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    /* margin-top: 50px; */
+}
+
+.logo-eloy{
+    width: 200px;
+    height: 120px;
+}
+
+h1{
+    color: rgba(187, 19, 19, 0.897);
+     font-family: "Montserrat", sans-serif;
+}
+
+
+.banner{
+    margin-top: 50px;
+    width: 70%; 
+    margin-left: 15%
+}
+
+.h1-de-index{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ultima-transmision{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.h3-de-index{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.anteriores-transmisiones{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer{
+    bottom: 0;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 20px;
+}
+
+.contenedor-pie{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+
+.logo-instagram{
+    width: 76.18px; 
+    height: 76.36px; 
+}
+ 
+.logo-facebook{
+    width: 76.18px;
+    height: 76.36px;    
+}
+
+
+/* galeria.html */
+
+.retos{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: url(../multimedia/r2copia.jpg);
+}
+
+.logros{
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+
+.mejores-retos{
+    border: 8px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 330px);
+    gap: 1px;
+    grid-template-areas: 
+    "parte-1 parte-1"
+    "parte-1 parte-1" 
+    "parte-2 parte-3"
+    ;
+}
+
+.parte-1{
+    grid-area: parte-1;  
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.parte-2{
+    grid-area: parte-2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    flex-wrap: wrap;
+}
+.parte-3{
+    grid-area: parte-3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 77px){
+    .mejores-retos{
+        border: 8px solid black;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 300px);
+        gap: 1px;
+        grid-template-areas: 
+        "parte-1 parte-1"
+        "parte-2 parte-3" 
+        ;
+    }
+    .parte-1{
+        margin-top: 50px;
+        grid-area: parte-1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parte-2{
+        grid-area: parte-2;
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .parte-3{
+        grid-area: parte-3;
+        display: flex;
+        flex-wrap: wrap;
+    }    
+}
+
+@media screen and (max-width: 320px){
+    .mejores-retos{
+        border: 8px solid black;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3, 200px);
+        gap: 1px;
+        grid-template-areas: 
+        "parte-1"
+        "parte-2" 
+        "parte-3"
+        ;
+    }
+    .parte-1{
+        margin-top: 50px;
+        grid-area: parte-1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parte-2{
+        grid-area: parte-2;
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .parte-3{
+        grid-area: parte-3;
+        display: flex;
+        flex-wrap: wrap;
+    }   
+    .parte-3{
+        display: none;
+    } 
+}
+
+/* contacto.html */
+
+.votacion{
+    color: rgba(187, 19, 19, 0.897);
+}
+
+/* nosotros.html */
+
+.hablamos-sobre-eloy{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(235, 175, 102);
+}
+
+.foto-eloy{
+    width: 400px;
+    height: 300px;
+    padding: 100px;
+}
+
+.sobre-eloy{
+    background-image: url(../multimedia/fondo.jpg)
+}
