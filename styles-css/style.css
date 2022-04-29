@@ -1,39 +1,42 @@
-/* *{
+*{
     padding: 0%;
     margin: 0%;  
-} */
+}
 
 body{
-    position: relative;
-    min-height: 100vh;
-    background-color: rgb(238, 201, 107);    
+   background-color: rgb(238, 201, 107);    
 }
 
 header{
     background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
 }
 
-nav{
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif; 
+    font-size: 30px; 
+    color: black;
     /* background-color: antiquewhite; */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-nav a{
-    text-decoration: none;
-    font-family:'Montserrat', sans-serif; 
-    font-size: 30px; 
-    color: black;
-    padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
-}
-
-nav a:hover{
+.nav-link:hover{
     color: rgba(187, 19, 19, 0.897);
 }
 
 .logo-eloy{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
     height: 120px;
     width: 200px;
     transition: height, width, 2s;
@@ -44,12 +47,10 @@ nav a:hover{
     width: 280px; 
 }
 
-
 h1{
     color: rgba(187, 19, 19, 0.897);
      font-family: "Montserrat", sans-serif;
 }
-
 
 .banner{
     margin-top: 50px;
@@ -84,7 +85,6 @@ h1{
 }
 
 footer{
-    bottom: 0;
     background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
     /* background-color: antiquewhite; */
     color: black;
@@ -96,7 +96,6 @@ footer{
     align-items:center;
     justify-content: space-evenly;
 }
-
 
 .logo-instagram{
     width: 76.18px; 
@@ -240,8 +239,8 @@ footer{
 }
 
 .foto-eloy{
-    width: 400px;
-    height: 300px;
+    width: 720px;
+    height: 600px;
     padding: 100px;
 }
 
