@@ -107,6 +107,11 @@ footer{
     height: 76.36px;    
 }
 
+.enlaces-externos{
+    width: 560px;
+    height: 315px;
+}
+
 
 /* galeria.html */
 
@@ -122,7 +127,6 @@ footer{
     text-align: center;
 
 }
-
 
 .mejores-retos{
     border: 8px solid black;
@@ -144,8 +148,8 @@ footer{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-
 }
+    
 .parte-2{
     grid-area: parte-2;
     display: flex;
@@ -161,7 +165,7 @@ footer{
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 77px){
+@media screen and (max-width: 768px){
     .mejores-retos{
         border: 8px solid black;
         display: grid;
@@ -242,8 +246,11 @@ footer{
     width: 720px;
     height: 600px;
     padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .sobre-eloy{
     background-image: url(../multimedia/fondo.jpg)
 }
+
