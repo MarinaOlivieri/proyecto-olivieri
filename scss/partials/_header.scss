@@ -1,0 +1,17 @@
+header{
+    background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
+    nav{
+        display: flex;
+        justify-content: center;
+        .nav-link{
+            text-decoration: none;
+            font-family:'Montserrat', sans-serif; 
+            font-size: 30px; 
+            color: black;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            }
+        }
+    }
+

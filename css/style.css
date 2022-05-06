@@ -6,8 +6,23 @@
 body{
    background-color: rgb(238, 201, 107);    
 }
-
-header{
+/* Utilizando un poco de sass */
+header {
+    background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); }
+    header nav {
+      display: flex;
+      justify-content: center; }
+      header nav .nav-link {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: black;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap; }
+  
+/* Deje comentado para poder trabajr con sass  */
+/* header{
     background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
 }
 
@@ -21,15 +36,14 @@ header{
     font-family:'Montserrat', sans-serif; 
     font-size: 30px; 
     color: black;
-    /* background-color: antiquewhite; */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
+} */
 
 .nav-link:hover{
     color: rgba(187, 19, 19, 0.897);
-}
+} 
 
 .logo-eloy{
     display: flex;
@@ -86,7 +100,6 @@ h1{
 
 footer{
     background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
-    /* background-color: antiquewhite; */
     color: black;
     font-size: 20px;
 }
