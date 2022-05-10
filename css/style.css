@@ -68,6 +68,7 @@ h1{
 
 .banner{
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 70%; 
     margin-left: 15%
 }
@@ -123,6 +124,12 @@ footer{
 .enlaces-externos{
     width: 560px;
     height: 315px;
+}
+
+/* contacto.html */
+
+.votacion{
+    margin-top: 80px;
 }
 
 
