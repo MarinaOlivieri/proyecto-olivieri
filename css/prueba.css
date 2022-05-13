@@ -1,13 +1,23 @@
-header {
+.header-footer, header, footer {
   background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); }
-  header nav {
+
+header nav {
+  display: flex;
+  justify-content: center; }
+  header nav .nav-link {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
     display: flex;
-    justify-content: center; }
-    header nav .nav-link {
-      text-decoration: none;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 30px;
-      color: black;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap; }
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+
+.header-footer, header, footer {
+  background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); }
+
+.header-footer, header, footer {
+  background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); }
+
+.logo-redes {
+  width: 76px; }

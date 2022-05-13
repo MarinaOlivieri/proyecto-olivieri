@@ -6,48 +6,29 @@
 body{
    background-color: rgb(238, 201, 107);    
 }
-/* Utilizando un poco de sass */
-header {
-    background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); }
-    header nav {
+/* Utilizando un poco de sass2 */
+
+/* header (comento para trabajar con SASS2) {
+    background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); } */   
+header nav {
+    display: flex;
+    justify-content: center; }
+    header nav .nav-link {
+      font-family: "Montserrat", sans-serif;
+      text-decoration: none;
+      color: black;
+      font-size: 30px;
       display: flex;
-      justify-content: center; }
-      header nav .nav-link {
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-        color: black;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap; }
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
   
-/* Deje comentado para poder trabajr con sass  */
-/* header{
-    background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
-}
-
-.nav{
-    display: flex;
-    justify-content: center;
-}
-
-.nav-link{
-    text-decoration: none;
-    font-family:'Montserrat', sans-serif; 
-    font-size: 30px; 
-    color: black;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-} */
-
 .nav-link:hover{
     color: rgba(187, 19, 19, 0.897);
 } 
 
 .logo-eloy{
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 5px 5px 5px 5px;
     margin: 5px 5px 5px 5px;
@@ -98,9 +79,12 @@ h1{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+/* Trabajando con SAS2-extend.scss */
+.header-footer, header, footer {
+    background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); }
+  
 footer{
-    background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
+    /* ( Comento para trabajar con SSAS2) background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20)); */
     color: black;
     font-size: 20px;
 }
@@ -111,16 +95,10 @@ footer{
     justify-content: space-evenly;
 }
 
-.logo-instagram{
-    width: 76.18px; 
-    height: 76.36px; 
-}
+.logo-redes{
+    width: 76px; 
+} 
  
-.logo-facebook{
-    width: 76.18px;
-    height: 76.36px;    
-}
-
 .enlaces-externos{
     width: 560px;
     height: 315px;

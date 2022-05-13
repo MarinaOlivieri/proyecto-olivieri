@@ -1,17 +1,15 @@
+@import "../variables/variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+
 header{
-    background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20));
+    @extend .header-footer;
     nav{
-        display: flex;
-        justify-content: center;
+        @include flexibilizar-centrar;
         .nav-link{
-            text-decoration: none;
-            font-family:'Montserrat', sans-serif; 
-            font-size: 30px; 
-            color: black;
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            }
+            @include fuentes;
         }
     }
+}
+
 
