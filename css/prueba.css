@@ -8,16 +8,14 @@ header nav {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 300px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap; }
 
-.header-footer, header, footer {
-  background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); }
-
-.header-footer, header, footer {
-  background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); }
+h1 {
+  color: rgba(187, 19, 19, 0.897);
+  font-family: "Montserrat", sans-serif; }
 
 .logo-redes {
   width: 76px; }

@@ -8,8 +8,6 @@ body{
 }
 /* Utilizando un poco de sass2 */
 
-/* header (comento para trabajar con SASS2) {
-    background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); } */   
 header nav {
     display: flex;
     justify-content: center; }
@@ -42,49 +40,12 @@ header nav {
     width: 280px; 
 }
 
-h1{
-    color: rgba(187, 19, 19, 0.897);
-     font-family: "Montserrat", sans-serif;
-}
-
-.banner{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 70%; 
-    margin-left: 15%
-}
-
-.h1-de-index{
-    text-align: center;
-    margin-top: 50px;
-}
-
-.ultima-transmision{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    flex-wrap: wrap;
-}
-
-.h3-de-index{
-    text-align: center;
-    margin-top: 50px;
-}
-
-.anteriores-transmisiones{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 /* Trabajando con SAS2-extend.scss */
+
 .header-footer, header, footer {
     background-image: linear-gradient(to right, #cfcf14, #ce9121, #cfcf14, #ce9121, #cfcf14); }
   
 footer{
-    /* ( Comento para trabajar con SSAS2) background-image: linear-gradient(to right, rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20), rgb(206, 145, 33), rgb(207, 207, 20)); */
     color: black;
     font-size: 20px;
 }
@@ -98,10 +59,67 @@ footer{
 .logo-redes{
     width: 76px; 
 } 
- 
+
+/* -- index.html -- */
+
+.banner{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%; 
+    margin-left: 15%
+}
+
+/*  -- directos.html -- */
+
+h1 {
+    color: rgba(187, 19, 19, 0.897);
+    font-family: "Montserrat", sans-serif; }
+  
+.h1-de-directos{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ultima-transmision{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.h3-de-directos{
+    text-align: center;
+    margin-top: 50px;
+}
+
 .enlaces-externos{
     width: 560px;
     height: 315px;
+}
+
+@media screen and (max-width: 768px){
+    .enlaces-externos{
+        display: flex;
+        width: 310px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .enlaces-externos{
+        display: flex;
+        width: 200px;
+        height: 150px;
+    }
+}
+
+.anteriores-transmisiones{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* contacto.html */
@@ -110,8 +128,12 @@ footer{
     margin-top: 80px;
 }
 
-
 /* galeria.html */
+
+.enlaces-externos-1{
+    width: 560px;
+    height: 315px;
+}
 
 .retos{
     margin-top: 50px;
@@ -193,6 +215,14 @@ footer{
     }    
 }
 
+@media screen and (max-width: 768px){
+    .enlaces-externos-1{
+        display: flex;
+        width: 250px;
+        height: 180px;
+    }
+}
+
 @media screen and (max-width: 320px){
     .mejores-retos{
         border: 8px solid black;
@@ -225,6 +255,14 @@ footer{
     .parte-3{
         display: none;
     } 
+}
+
+@media screen and (max-width: 320px){
+    .enlaces-externos-1{
+        display: flex;
+        width: 150px;
+        height: 100px;
+    }
 }
 
 /* contacto.html */

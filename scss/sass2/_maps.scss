@@ -1,1 +1,12 @@
 @import "../variables/variables";
+
+$redes:(
+    color: $rojo,
+    letra: $tipo-de-letra,
+
+);
+
+h1{
+    color: map-get($redes, color);
+    font-family: map-get($redes, letra);
+}
