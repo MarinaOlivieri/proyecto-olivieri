@@ -131,6 +131,15 @@ h1 {
     flex-wrap: wrap;
 }
 
+/* contacto.html */
+
+.contenedor-de-votacion{
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
 /* galeria.html */
 
 .logros{
@@ -391,7 +400,6 @@ h1 {
     }
 }
     
-
 .p-RE4{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
