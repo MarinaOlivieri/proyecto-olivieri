@@ -31,31 +31,47 @@
     </header>
 
     <h1 class="votacion"> Elegimos el proximo reto </h1>
-    <form>
-        <fieldset>
-            <legend> Vota tu Resident Evil favorito </legend>
-            <label for="juego_dia">Juego</label>
-            <input type="text" name="juego" placeholder="Escribe aqui el Resident">
-            <label for="juego_dia">Dia</label>
-            <input type="text" name="dia" placeholder="Escribe aqui el dia">
-
-            <select name="Retos">
-                <option value="elegir">Elige el reto</option>
-                <option value="cuchillo">Solo cuchillo</option>
-                <option value="morir">Sin morir</option>
-                <option value="cura">Sin curarse</option>
-            </select>  <strong>(Se jugara el juego y reto el dia de la proxima semana que ustedes elijan)</strong>
-            
-            <div>Deja comentado que reto te gustaria ver</div>
-            <textarea name="text" cols="150" rows="10" placeholder="Escriba aqui su reto"></textarea>
-            <div>
-                Acepta terminos y condiciones?
-                <input type="checkbox" name="check">
+    <form class="row g-3">
+        <legend> Vota tu Resident Evil favorito </legend>
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Juego</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Escribe aqui el Resident">
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Día</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Escribe aqui el dia">
+        </div>
+        <div class="col-md-4">  
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label"></label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Elige el reto</option>
+            <option value="cuchillo">Solo cuchillo</option>
+            <option value="morir">Sin morir</option>
+            <option value="cura">Sin curarse</option>
+          </select> 
+        </div> 
+        <strong>(Se jugara el juego y reto el dia de la proxima semana que ustedes elijan)</strong>
+        <form class="was-validated">
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label">Deja comentado que reto te gustaria ver</label>
+              <textarea class="form-control is-invalid" id="validationTextarea" cols="100" rows="10"   placeholder="Escriba aqui su reto" required></textarea>
+              <div class="invalid-feedback">
+                Por favor ingrese un texto.
+              </div>
             </div>
-            <input type="submit" value="Enviar votacion">
-            <input type="reset" value="Limpiar votacion">
-
-        </fieldset>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Acepto terminos y condiciones
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar elección</button>
+        </div>
     </form>
 
     <footer class="pie">
